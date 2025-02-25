@@ -5,7 +5,7 @@ const Message = require('../models/MessageModel')
 module.exports.initilizeSocket = (server) => {
     const io = new socketIo.Server(server, {
         cors: {
-            origin: "https://musixity.onrender.com/",
+            origin: "https://musixity.onrender.com",
             credentials: true
         }
     })
