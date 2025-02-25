@@ -22,7 +22,7 @@ interface ChatStore {
     setSelectedUser: (user: User | null) => void;
 }
 
-const baseURL = 'http://localhost:8005'
+const baseURL = 'https://musicbackend-f7v7.onrender.com'
 
 const socket = io(baseURL, {
     autoConnect: false, // only connect if user is authenticated
