@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-    baseURL: "http://localhost:8005/api"
+    baseURL: "https://musicbackend-f7v7.onrender.com/api"
 })
