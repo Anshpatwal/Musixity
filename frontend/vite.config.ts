@@ -12,5 +12,7 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // Allow external access
     port: process.env.PORT ? Number(process.env.PORT) : 5173, // Convert PORT to a number
+    strictPort: true, // Ensure the port is used strictly
+    allowedHosts: ["musixity.onrender.com"], // Allow Render's domain
   }
 })
