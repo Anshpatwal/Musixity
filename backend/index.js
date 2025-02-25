@@ -18,7 +18,7 @@ const httpServer = http.createServer(app)
 initilizeSocket(httpServer)
 
 app.use(cors({
-    origin: "*",
+    origin: "https://musixity.onrender.com",
     credentials: true
 }))
 app.use(express.json())
